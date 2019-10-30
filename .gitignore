@@ -1,0 +1,14 @@
+#IntelliJ
+
+*.iml
+.idea
+*target*
+
+#Java
+.classpath
+.project
+.settings
+.metadata
+.DS_Store
+.factorypath
+dependency-reduced-pom.xml
