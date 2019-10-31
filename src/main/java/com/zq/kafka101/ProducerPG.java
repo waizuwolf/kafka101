@@ -34,7 +34,7 @@ public class ProducerPG {
       if ("EXIT".equalsIgnoreCase(input)) {
         break;
       }
-      ProducerRecord<String, String> record = new ProducerRecord<>(TOPIC, "", input);
+      ProducerRecord<String, String> record = new ProducerRecord<>(TOPIC, input);
       Future<RecordMetadata> future = kafkaProducer.send(record);
       RecordMetadata recordMetadata = future.get();
       System.out.println("Message published on " +
